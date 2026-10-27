@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
+import Hero from "@/components/sections/Hero";
 
 function Placeholder({ id, title }: { id: string; title: string }) {
   return (
@@ -17,7 +18,7 @@ export default function App() {
     <>
       <Navbar />
       <main>
-        <Placeholder id="home" title="Hero" />
+        <Hero />
         <Placeholder id="about" title="About" />
         <Placeholder id="skills" title="Skills" />
         <Placeholder id="projects" title="Projects" />
