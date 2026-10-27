@@ -1,22 +1,29 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
-import SectionTitle from "@/components/ui/SectionTitle";
-import Button from "@/components/ui/Button";
-import Tag from "@/components/ui/Tag";
+
+function Placeholder({ id, title }: { id: string; title: string }) {
+  return (
+    <section id={id} className="flex min-h-screen items-center">
+      <Container>
+        <h2 className="text-3xl font-semibold">{title}</h2>
+      </Container>
+    </section>
+  );
+}
 
 export default function App() {
   return (
-    <Container className="py-20">
-      <SectionTitle label="Featured Projects" title="Some of My Recent Work" />
-      <div className="mt-6 flex gap-3">
-        <Button href="#projects">View My Work</Button>
-        <Button variant="outline" href="/Youssef_CV.pdf" download>
-          Download CV
-        </Button>
-      </div>
-      <div className="mt-6 flex gap-2">
-        <Tag>Python</Tag>
-        <Tag>FastAPI</Tag>
-      </div>
-    </Container>
+    <>
+      <Navbar />
+      <main>
+        <Placeholder id="home" title="Hero" />
+        <Placeholder id="about" title="About" />
+        <Placeholder id="skills" title="Skills" />
+        <Placeholder id="projects" title="Projects" />
+        <Placeholder id="contact" title="Contact" />
+      </main>
+      <Footer />
+    </>
   );
 }
