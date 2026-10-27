@@ -1,75 +1,56 @@
-# React + TypeScript + Vite
+# Youssef Mohamed | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Youssef Mohamed, a Computer Science graduate specializing in AI and software engineering.
 
-Currently, two official plugins are available:
+**Live:** https://YOUR-DOMAIN.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
 
-## React Compiler
+- React + TypeScript (Vite)
+- Tailwind CSS v4
+- Lucide and React Icons
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Sections
 
-## Expanding the ESLint configuration
+About, Skills, Projects, Contact.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Other commands:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run build     # production build
+npm run preview   # preview the production build
+npm run lint      # lint the code
 ```
+
+## Editing the content
+
+All content lives in `src/data/`, so no component needs to change:
+
+| File          | What it controls                                           |
+| ------------- | ---------------------------------------------------------- |
+| `about.ts`    | Name, headline, bio and highlight cards                    |
+| `skills.ts`   | Skill groups (icons are mapped in `src/lib/skillIcons.ts`) |
+| `projects.ts` | Project cards: title, description, tech, links, screenshot |
+| `contact.ts`  | Contact links                                              |
+
+To add a project screenshot, put a 1280×720 `.webp` file in `src/assets/images/projects/`, import it in `projects.ts` and set it as `image`.
+
+To change the CV, replace `public/Youssef_CV.pdf` and keep the same file name.
+
+## Colors
+
+The theme is defined in `src/styles/global.css` under `@theme`. Changing a value there updates the whole site.
+
+## Deployment
+
+The site is deployed on Vercel. Every push to `main` triggers a new deployment.
+
+- Build command: `npm run build`
+- Output directory: `dist`
