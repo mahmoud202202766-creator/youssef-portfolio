@@ -2,7 +2,9 @@
 
 Personal portfolio website for Youssef Mohamed, a Computer Science graduate specializing in AI and software engineering.
 
-**Live:** https://YOUR-DOMAIN.vercel.app
+**Live:** https://youssef-portfolio-topaz.vercel.app
+
+![Portfolio preview](public/preview.png)
 
 ## Tech stack
 
