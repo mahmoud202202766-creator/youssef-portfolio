@@ -4,6 +4,7 @@ import Container from "@/components/layout/Container";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
+import Projects from "@/components/sections/Projects";
 
 function Placeholder({ id, title }: { id: string; title: string }) {
   return (
@@ -23,7 +24,7 @@ export default function App() {
         <Hero />
         <About />
         <Skills />
-        <Placeholder id="projects" title="Projects" />
+        <Projects />
         <Placeholder id="contact" title="Contact" />
       </main>
       <Footer />
