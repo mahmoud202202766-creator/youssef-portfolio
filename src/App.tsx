@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Skills from "@/components/sections/Skills";
 
 function Placeholder({ id, title }: { id: string; title: string }) {
   return (
@@ -21,7 +22,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <Placeholder id="skills" title="Skills" />
+        <Skills />
         <Placeholder id="projects" title="Projects" />
         <Placeholder id="contact" title="Contact" />
       </main>

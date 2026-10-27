@@ -14,7 +14,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="border-t border-border bg-surface/40 py-20 md:py-24"
+      className="border-t border-border bg-surface/40 py-14 md:py-16"
     >
       <Container className="grid gap-12 md:grid-cols-2 md:items-center">
         <div>
