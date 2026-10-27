@@ -74,6 +74,7 @@ export default function Hero() {
               alt={about.name}
               width={800}
               height={1067}
+              fetchPriority="high"
               className="aspect-square w-60 rounded-full border border-border object-cover object-top md:w-80"
             />
           </div>
