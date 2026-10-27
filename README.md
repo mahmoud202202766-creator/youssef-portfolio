@@ -4,7 +4,8 @@ Personal portfolio website for Youssef Mohamed, a Computer Science graduate spec
 
 **Live:** https://youssef-portfolio-topaz.vercel.app
 
-![Portfolio preview](public/preview.png)
+![Portfolio preview](<img width="1350" height="679" alt="preview" src="https://github.com/user-attachments/assets/bf65e0dc-0ec5-446f-90cb-0d045dc5ada6" />
+)
 
 ## Tech stack
 
