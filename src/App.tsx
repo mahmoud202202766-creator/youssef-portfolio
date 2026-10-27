@@ -1,21 +1,10 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Container from "@/components/layout/Container";
-import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import Skills from "@/components/sections/Skills";
-import Projects from "@/components/sections/Projects";
-import Contact from "@/components/sections/Contact";
-
-function Placeholder({ id, title }: { id: string; title: string }) {
-  return (
-    <section id={id} className="flex min-h-screen items-center">
-      <Container>
-        <h2 className="text-3xl font-semibold">{title}</h2>
-      </Container>
-    </section>
-  );
-}
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
+import Hero from '@/components/sections/Hero'
+import About from '@/components/sections/About'
+import Skills from '@/components/sections/Skills'
+import Projects from '@/components/sections/Projects'
+import Contact from '@/components/sections/Contact'
 
 export default function App() {
   return (
@@ -30,5 +19,5 @@ export default function App() {
       </main>
       <Footer />
     </>
-  );
+  )
 }
