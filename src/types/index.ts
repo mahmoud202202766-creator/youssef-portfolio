@@ -16,6 +16,7 @@ export interface SkillGroup {
 
 export interface ContactLink {
   label: string;
+  value: string;
   href: string;
   icon: "mail" | "linkedin" | "github" | "phone";
 }
